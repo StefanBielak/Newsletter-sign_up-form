@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(235, 18%, 26%);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 100px;
+}
+.form{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 928px;
+    height: 641;
+    border-radius: 36px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
+}
+.form_info{
+    padding-left: 50px;
+}
+.form_info_title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+}
+.form_info_text{
+    width: 376px;
+}
+.form_info_list{
+    list-style: none;
+}
+.item_list{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: -40px
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.signup_title{
+    font-weight: 700;
+    font-size: 12px;
+}
+.signup_email{
+    height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+.signup_button{
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    border:none;
+}
+.signup_button:hover{
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+    box-shadow: 0px 8px 20px hsl(4, 50%, 67%), 0px 4px 6px hsl(4, 50%, 67%);
+}
+.form_photo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+}
