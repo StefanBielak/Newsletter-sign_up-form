@@ -6,8 +6,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
@@ -16,30 +16,43 @@
       <h1 class="form_info_title">Stay updated!</h1>
       <p class="form_info_text">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="form_info_list">
-      <li class="item_list">
-        <img src="./assets/images/icon-list.svg">
-        <p>Product discovery and building what matters</p>
-      </li>
-      <li class="item_list">
-        <img src="./assets/images/icon-list.svg">
-        <p>Measuring to ensure updates are a success</p>
-      </li>
-      <li class="item_list">
-        <img src="./assets/images/icon-list.svg">
-        <p>And much more!</p>
-      </li>
+        <li class="item_list">
+          <img src="./assets/images/icon-list.svg">
+          <p>Product discovery and building what matters</p>
+        </li>
+        <li class="item_list">
+          <img src="./assets/images/icon-list.svg">
+          <p>Measuring to ensure updates are a success</p>
+        </li>
+        <li class="item_list">
+          <img src="./assets/images/icon-list.svg">
+          <p>And much more!</p>
+        </li>
       </ul>
+      <p class="error-message">Valid email required</p>
       <form class="signup">
         <p class="signup_title">Email address</p>
         <input class="signup_email" type="email" placeholder="email@company.com">
         <button class="signup_button" type="submit">Subscribe to monthly newsletter</button>
       </form>
     </div>
+    <picture>
+    <source media="(max-width: 376px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
     <img class="form_photo" src="./assets/images/illustration-sign-up-desktop.svg" alt="main photo">
+    </picture>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <img src="./assets/images/icon-success.svg">
+      <h1 class="modal_title">Thank you for subscribing!</h1>
+      <p class="modal_text">A confirmation email has been sent. Please open it and click the button inside to confirm your subscription.</p>
+      <button class="close">Dismiss message</button>
+    </div>
   </div>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Stefan Bielak</a>.
   </div> -->
+  <script src="./index.js"></script>
 </body>
 </html>
